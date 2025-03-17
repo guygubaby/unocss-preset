@@ -1,4 +1,4 @@
-import type { Preset } from 'unocss'
+import type { Awaitable, Preset } from 'unocss'
 import { presetUni } from '@uni-helper/unocss-preset-uni'
 import {
   toEscapedSelector as e,
@@ -79,11 +79,21 @@ function presetWh(): Preset {
   }
 }
 
+/**
+ * Custom icon loader, used by `getCustomIcon`.
+ */
+type CustomIconLoader = (name: string) => Awaitable<string | undefined>
+
+/**
+ * List of icons as object. Key is the icon name, the value is the icon data or callback (can be async) to get icon data
+ */
+type InlineCollection = Record<string, string | (() => Awaitable<string | undefined>)>
+
 interface IOptions {
   useShortcuts?: boolean
   useIcon?: boolean
   useCdnIcon?: boolean
-  iconCollection?: Record<string, Record<string, string>>
+  iconCollection?: Record<string, (() => Awaitable<any>) | CustomIconLoader | InlineCollection | undefined> | undefined
   extraProperties?: Record<string, string>
 }
 
