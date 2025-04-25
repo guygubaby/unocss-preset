@@ -2,7 +2,7 @@
   "name": "@bryce-loskie/unocss-preset",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.9.0",
   "description": "Bryce Loskie's Unocss preset",
   "author": "@guygubaby",
   "license": "MIT",
@@ -64,19 +64,19 @@
     "@uni-helper/unocss-preset-uni": "^0.2.11"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
-    "@antfu/ni": "^23.3.1",
+    "@antfu/eslint-config": "^4.12.0",
+    "@antfu/ni": "^24.3.0",
     "@types/node": "^22.13.5",
-    "@unocss/autocomplete": "^66.0.0",
-    "@unocss/core": "^66.0.0",
-    "bumpp": "^10.0.3",
-    "eslint": "^9.21.0",
+    "@unocss/autocomplete": "^66.1.0-beta.12",
+    "@unocss/core": "^66.1.0-beta.12",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.25.1",
     "esno": "^4.8.0",
-    "pnpm": "^10.4.1",
+    "pnpm": "^10.9.0",
     "rimraf": "^6.0.1",
     "taze": "^18.6.0",
-    "typescript": "^5.7.3",
-    "unbuild": "^3.3.1",
-    "unocss": "^66.0.0"
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0",
+    "unocss": "^66.1.0-beta.12"
   }
 }
