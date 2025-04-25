@@ -1,48 +1,31 @@
-# Unocss Preset Mini
-
-## Introduction
-Unocss Preset Mini is a preset support uniapp mini program.
+# Opinionated Unocss Preset
 
 ## Install
-To get started with Unocss Preset Mini, follow these simple steps:
+To get started with Unocss Preset, follow these simple steps:
 
 ### 1. Install Unocss
 ```bash
-pnpm i -D unocss
+pnpm i -D unocss @bryce-loskie/unocss-preset
 ```
 
-### 2. Install Unocss Preset Mini
-```bash
-pnpm i -D @bryce-loskie/unocss-preset-mini
-```
-
-### 3. Configure Unocss to use the Mini preset.
+### 2. Configure Unocss to use the preset.
 In your project's Unocss configuration file (usually named ),
-import the preset and add it to the section:`unocss.config.js`
+import the preset and add it to the section:`unocss.config.[jt]s`
 
 ```ts
 // uno.config.ts
-import { presetMini } from '@bryce-loskie/unocss-preset-mini'
+import { presetWeb } from '@bryce-loskie/unocss-preset'
+import { presetMini } from '@bryce-loskie/unocss-preset/mini' // for uniapp only
 import { defineConfig } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetMini(),
-    // ...custom presets
+    presetWeb(), // for web
+    presetMini(), // for uniapp
   ],
 })
 ```
 
-### 4. More rules
-
-1. `wh-xx / hw-xx` -> `w-xx h-xx`
-
-2. `fc` -> `flex justify-center items-center`
-
-3. `safe-area-top / safe-area-bottom`
-
-4. `ellipsis-[number]`
-
 ## License
 
-[MIT](./LICENSE) License &copy; 2024-PRESENT [guygubaby](https://github.com/guygubaby/unocss-preset-mini)
+[MIT](./LICENSE) License &copy; 2025-PRESENT [guygubaby](https://github.com/guygubaby/unocss-preset-mini)

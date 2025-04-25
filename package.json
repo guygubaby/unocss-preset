@@ -1,21 +1,21 @@
 {
-  "name": "@bryce-loskie/unocss-preset-mini",
+  "name": "@bryce-loskie/unocss-preset",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.4.1",
   "description": "Bryce Loskie's Unocss preset",
   "author": "@guygubaby",
   "license": "MIT",
-  "homepage": "https://github.com/guygubaby/unocss-preset-mini#readme",
+  "homepage": "https://github.com/guygubaby/unocss-preset#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guygubaby/unocss-preset-mini.git"
+    "url": "git+https://github.com/guygubaby/unocss-preset.git"
   },
-  "bugs": "https://github.com/guygubaby/unocss-preset-mini/issues",
+  "bugs": "https://github.com/guygubaby/unocss-preset/issues",
   "keywords": [
     "unocss",
     "unocss-preset",
-    "unocss-preset-mini"
+    "unocss-preset"
   ],
   "sideEffects": false,
   "exports": {
@@ -23,6 +23,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./mini": {
+      "types": "./dist/mini.d.ts",
+      "import": "./dist/mini.mjs",
+      "require": "./dist/mini.cjs"
     }
   },
   "main": "./dist/index.mjs",
