@@ -21,7 +21,6 @@ export function presetWeb(options: IOptions = {}): Preset {
   return {
     name: 'uno-preset-web',
     presets: [
-      // @ts-expect-error ignore
       presetWind3(),
       presetShortcuts(options),
       presetSafearea(),

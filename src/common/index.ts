@@ -99,18 +99,8 @@ export function presetShortcuts(options: IOptions = {}): Preset {
     name: 'uno-preset-shortcuts',
     shortcuts: options.useShortcuts
       ? [
-          ['p-base', 'p-20px'],
           ['fc', 'flex justify-center items-center'],
-
           ['shadow-dim', 'shadow-[0px_2px_10px_0px_rgba(38,44,71,0.16)]'],
-          ['shadow-dim1', 'shadow-[0px_2px_4px_0px_rgba(0,14,26,0.06)]'],
-
-          ['text-sm', 'text-12px leading-20px'],
-          ['text-base', 'text-14px leading-22px'],
-          ['text-lg', 'text-16px leading-24px'],
-          ['text-xl', 'text-18px leading-28px'],
-          ['text-2xl', 'text-22px leading-34px'],
-          ['text-3xl', 'text-26px leading-34px'],
         ]
       : [],
   }
