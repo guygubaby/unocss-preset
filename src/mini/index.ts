@@ -31,11 +31,11 @@ export function presetMini(options: IOptions = {}): Preset {
       presetIcon(options),
       presetWh(),
     ],
-    blocklist: [
-      'tab',
-      'block',
-      'container',
-      /size-.*/,
-    ],
+    // blocklist: [
+    //   'tab',
+    //   'block',
+    //   'container',
+    //   /size-.*/,
+    // ],
   }
 }
